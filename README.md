@@ -1,8 +1,8 @@
-## Prefacio (ahrre palabra pituca)
+## 📖 Prefacio (ahrre palabra pituca)
 
 Lo típico, usar una vm con la iso de arch linux x86_64, hacer un booteable con rufus, iniciar y elegir arch install medium (la primera opción), esperar hasta que salga la terminal y correr el comando archinstall (no, nadie quiere particionar un dico a mano).
 
-## Settings de archinstall
+## ⚙️ Settings de archinstall
 
 En cuanto a paquetes adicionales que puse en las settings, dejo un resumen de lo que son:
 | Paquete  | Descripción |
@@ -45,7 +45,7 @@ Luego instalar, cuando pregunte si quieres hacer algún cambio post-install deci
 reboot
 ```
 
-## Y ahora qué? Empieza la cosecha de arroz
+## 🗺️ Y ahora qué? Empieza la cosecha de arroz 🌾
  
 En la comunidad de [r/unixporn](https://www.reddit.com/r/unixporn/) y de Arch en general, se le llama ricing a configurar exhaustivamente el sistema hasta que quede bien aesthetic ✨, viene de que es un proceso tan tedioso como cosechar arroz.
 
@@ -72,7 +72,7 @@ yay -Y --devel --save
 
 Y listo, ya podemos usar yay como nuestro package manager, sólo tener en cuenta que yay es un repositrio mantenido por usuarios y no es oficial de Arch, asi que recomiendo fuertemente buscar los paquetes antes de instalar para verificar las versiones que se quiere instalar, con buscar "nombreDelPaquete Arch" en google debería ser suficiente para cachar la versión del paquete y origen (UpStreamURL), para actualizar los paquetes del sistema podemos simplemente ejecutar `yay` y lo hace solo, cualquier duda revisar el [repositorio oficial](https://github.com/Jguer/yay).
 
-### Tutorial MUY MUY basico de Vim/NeoVim
+### 🤖 Tutorial MUY MUY basico de Vim/NeoVim
 
 ⚠️ Ojo, si realmente no quieres usar NeoVim puedes instalar VS Code con `yay Visual Studio Code` y listo⚠️
 
@@ -110,7 +110,7 @@ Esto es todo lo necesario para usar NeoVim, un tutorial (mucho) más completo se
 
 Como buenos computines, pasamos un buen rato en la terminal asi que debería al menos ser agradable a la vista, asi que manos a la o
 
-### Tema de kitty
+### 🐈‍⬛ Tema de kitty
 
 En general todos los programas de linux guardan sus configuraciones en `~/.config`, algunos como las shell lo guardan directamente en `~`, asi que sabiendo esto, crearemos el archivo de configuración de Kitty, si un directorio no existe, hay que crearlo con `mkdir`.
 
@@ -172,7 +172,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 ```
 
-Despues creamos el archivo donde se guarda el historial de comandos:
+Despues creamos el archivo donde se guarda el historial de comandos (archivo vacío, salir con `:wq`):
 
 ```
 nvim .zsh_history
