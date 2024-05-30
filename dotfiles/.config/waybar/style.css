@@ -1,0 +1,29 @@
+* {
+    font-family: 'FiraCode Nerd Font', monospace;
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+
+}
+
+#clock,
+#battery,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode {
+    background-color: #1e1e2e; /* Change this to any gray color you want */
+    border-radius: 10px; /* Adjust as needed */
+    padding: 5px 10px;
+    color: #cdd6f4;
+}
+
+#clock {
+    color: #e5c890
+}

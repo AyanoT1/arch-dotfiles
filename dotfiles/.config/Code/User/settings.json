@@ -1,0 +1,28 @@
+{
+    // Editor Font Settings
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Iosevka NFP",
+    "editor.fontLigatures": true,
+
+    // Editor General Settings
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": "on",
+    "editor.minimap.enabled": false,
+
+    // Themes Settings
+    "workbench.colorTheme": "Alt Catppuccin Frappé",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Terminal Settings
+    "terminal.integrated.fontFamily": "JetBrainsMono NFM",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.shellIntegration.enabled": false,
+
+    // General VScode Settings
+    "breadcrumbs.enabled": false,
+    "explorer.compactFolders": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.statusBar.visible": true,
+    "security.workspace.trust.untrustedFiles": "open",
+}
