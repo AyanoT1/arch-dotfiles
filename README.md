@@ -193,7 +193,10 @@ setopt HIST_VERIFY
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source <(fzf --zsh)
 ```
+
+Trucazo con el fzf, gracias al source fzf de arriba, cuando apretamos <kbd>Ctrl + <kbd>r podemos navegar el historial de comandos.
 
 En este mismo archivo podemos crear aliases que nos parezcan útiles con:
 ```
@@ -203,7 +206,6 @@ Los que estoy usando son:
 | Alias     | Comando                                    | Descripción                                                   |
 |-----------|--------------------------------------------|---------------------------------------------------------------|
 | ls        | ls -lah                                    | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
-| hs        | cat ~/.zsh_history \| fzf                  | Muestra el historial de comandos y permite buscar comandos    |
 | fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                |
 | vim       | nvim                                       | Sí, vim es más corto que nvim                                 |
 
