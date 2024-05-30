@@ -198,10 +198,14 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 En este mismo archivo podemos crear aliases que nos parezcan útiles, los que estoy usando son (despues de crear los alias hay que reiniciar el terminal):
 
 ```
-alias ls="ls -lah"  # Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles
-alias hs="cat ~/.zsh_history | fzf" # Muestra el historial de comandos y permite buscar comandos
-alias fontlist="fc-list | cut -d'/' -f4- | fzf" # Permite ver las fuentes instaladas y el nombre
-alias vim="nvim" # Sí, vim es más corto que nvim
+alias nombre="comando"
 ```
+| Alias     | Comando                                    | Descripción                                                   |
+|-----------|--------------------------------------------|---------------------------------------------------------------|
+| ls        | ls -lah                                    | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
+| hs        | cat ~/.zsh_history \| fzf                  | Muestra el historial de comandos y permite buscar comandos    |
+| fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                |
+| vim       | nvim                                       | Sí, vim es más corto que nvim                                 |
+
 
 # Coming Soon 🔜
