@@ -195,11 +195,11 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
-En este mismo archivo podemos crear aliases que nos parezcan útiles, los que estoy usando son (despues de crear los alias hay que reiniciar el terminal):
-
+En este mismo archivo podemos crear aliases que nos parezcan útiles con:
 ```
 alias nombre="comando"
 ```
+Los que estoy usando son: 
 | Alias     | Comando                                    | Descripción                                                   |
 |-----------|--------------------------------------------|---------------------------------------------------------------|
 | ls        | ls -lah                                    | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
@@ -207,5 +207,6 @@ alias nombre="comando"
 | fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                |
 | vim       | nvim                                       | Sí, vim es más corto que nvim                                 |
 
+Para ocupar los aliases creados hay que reinicar el terminal.
 
 # Coming Soon 🔜
