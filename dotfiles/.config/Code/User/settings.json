@@ -1,7 +1,7 @@
 {
     // Editor Font Settings
-    "editor.fontSize": 16,
-    "editor.fontFamily": "Iosevka NFP",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
 
     // Editor General Settings
@@ -25,4 +25,6 @@
     "workbench.editor.showTabs": "multiple",
     "workbench.statusBar.visible": true,
     "security.workspace.trust.untrustedFiles": "open",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "git.autofetch": true,
 }

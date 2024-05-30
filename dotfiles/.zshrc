@@ -1,6 +1,10 @@
 eval "$(starship init zsh)"
 
-HISTFILE=~/zsh_history
+alias ls="ls -lah --color"
+alias fontlist="fc-list | cut -d'/' -f5- | fzf"
+alias vim="nvim"
+
+HISTFILE=~/.zsh_history
 
 HISTSIZE=5000
 SAVEHIST=5000
@@ -14,3 +18,4 @@ setopt HIST_VERIFY
            
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source <(fzf --zsh)
