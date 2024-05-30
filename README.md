@@ -196,7 +196,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source <(fzf --zsh)
 ```
 
-Trucazo con el fzf, gracias al source fzf de arriba, cuando apretamos <kbd>Ctrl<kbd> + <kbd>r<kbd> podemos navegar el historial de comandos.
+Trucazo con el fzf, gracias al source fzf de arriba, cuando apretamos <kbd>Ctrl</kbd> + <kbd>r</kbd> podemos navegar el historial de comandos.
 
 En este mismo archivo podemos crear aliases que nos parezcan útiles con:
 ```
