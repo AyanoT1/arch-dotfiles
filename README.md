@@ -209,7 +209,7 @@ alias nombre="comando"
 Los que estoy usando son:
 | Alias     | Comando                                    | Descripción                                                   |
 |-----------|--------------------------------------------|---------------------------------------------------------------|
-| ls        | ls -lah                                    | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
+| ls        | ls -lah --color                                   | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
 | fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                |
 | vim       | nvim                                       | Sí, vim es más corto que nvim                                 |
 
