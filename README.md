@@ -1,6 +1,10 @@
-## 📖 Prefacio (ahrre palabra pituca)
+# 📖 Prefacio (ahrre palabra pituca)
 
-Lo típico, usar una vm con la iso de arch linux x86_64, hacer un booteable con rufus, iniciar y elegir arch install medium (la primera opción), esperar hasta que salga la terminal y correr el comando archinstall (no, nadie quiere particionar un dico a mano).
+Éste readme es más una guía de Introducción al Ricing, para explicar los conceptos más basicos de la customización de Linux, los contenidos del repositorio son mis configuraciónes actuales (mis dotfiles) que espero sirvan de ejemplo más que simplemente copiar y pegar, aunque claro, recomendaría hacer todo este proceso (al menos) una sola vez y despues sí copiar y pegar.
+
+# ⬇️ Descargar e Instalar Arch Linux
+
+Lo típico, usar una vm con la iso de arch linux x86_64 o hacer un booteable con rufus, iniciar y elegir arch install medium (la primera opción), esperar hasta que salga la terminal y correr el comando archinstall (no, nadie quiere particionar un dico a mano).
 
 ## ⚙️ Settings de archinstall
 
@@ -41,12 +45,12 @@ Tip: En las configuraciones donde sale una lista larga usar / para buscar rápid
 
 Luego instalar, cuando pregunte si quieres hacer algún cambio post-install decir que no y reiniciar con el comando
 
-```
+```bash
 reboot
 ```
 
-## 🗺️ Y ahora qué? Empieza la cosecha de arroz 🌾
- 
+# 🗺️ Y ahora qué? Empieza la cosecha de arroz 🌾
+
 En la comunidad de [r/unixporn](https://www.reddit.com/r/unixporn/) y de Arch en general, se le llama ricing a configurar exhaustivamente el sistema hasta que quede bien aesthetic ✨, viene de que es un proceso tan tedioso como cosechar arroz.
 
 Bueno ahora sí, que hacer ahora? el sistema ya está utilizable, pero bastante mid, asi que hay que configurar para que quede digno de un Terminal Wizzard, Hacker o tu estereotipo de computación favorito, para eso podemos hacer lo siguiente:
@@ -55,7 +59,7 @@ De aquí en adelante mayoritariamente se va a ocupar la terminal (Kitty en este 
 
 Instalar el repositorio de usuarios de Arch, que contiene más cosas que pacman como programas, fuentes, etc.
 
-```
+```bash
 pacman -Sy --needed git base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -64,7 +68,7 @@ makepkg -si
 
 Luego antes de ocupar yay hay que correr los siguentes comandos (sólo se hace cuando se instala por primera vez en la maquina):
 
-```
+```bash
 yay -Y --gendb
 yay -Syu --devel
 yay -Y --devel --save
@@ -72,18 +76,18 @@ yay -Y --devel --save
 
 Y listo, ya podemos usar yay como nuestro package manager, sólo tener en cuenta que yay es un repositrio mantenido por usuarios y no es oficial de Arch, asi que recomiendo fuertemente buscar los paquetes antes de instalar para verificar las versiones que se quiere instalar, con buscar "nombreDelPaquete Arch" en google debería ser suficiente para cachar la versión del paquete y origen (UpStreamURL), para actualizar los paquetes del sistema podemos simplemente ejecutar `yay` y lo hace solo, cualquier duda revisar el [repositorio oficial](https://github.com/Jguer/yay).
 
-### 🤖 Tutorial MUY MUY basico de Vim/NeoVim
+## 🤖 Tutorial MUY MUY basico de Vim/NeoVim
 
 ⚠️ Ojo, si realmente no quieres usar NeoVim puedes instalar VS Code con `yay Visual Studio Code` y listo⚠️
 
 Neovim es una versión modernizada de Vim, que a su vez es una modernización de Vi, un editor de texto por terminal. Es un editor basado en modos:
 
-- **Modo Normal**: Es el modo por defecto para navegar y manipular texto. 
+- **Modo Normal**: Es el modo por defecto para navegar y manipular texto.
 - **Modo Insert**: Permite insertar texto. Se accede a él desde el modo Normal.
 
 Para abrir un archivo con Neovim (o crearlo si no existe) se usa:
 
-```
+```bash
 nvim direccion_del_archivo
 ```
 La dirección del archivo se refiere a la dirección relativa al directorio que esté abierto en ese momento en la terminal, se puede usar dirección absoluta centrada en home con `~/dirección`.
@@ -114,7 +118,7 @@ Como buenos computines, pasamos un buen rato en la terminal asi que debería al 
 
 En general todos los programas de linux guardan sus configuraciones en `~/.config`, algunos como las shell lo guardan directamente en `~`, asi que sabiendo esto, crearemos el archivo de configuración de Kitty, si un directorio no existe, hay que crearlo con `mkdir`.
 
-```
+```bash
 cd
 cd .config/
 cd kitty
@@ -123,26 +127,26 @@ nvim kitty.conf
 
 La configuración que más importa de este archivo es seleccionar la fuente, acá también se guardan los colores y otras cosas, ver el archivo del repositorio o consultar la [documentación oficial de kitty](https://sw.kovidgoyal.net/kitty/), asi que con NeoVim en insert-mode agregamos lo siguiente:
 
-```
+```bash
 font_family       FiraCode Nerd Font
 bold_font         FiraCode Nerd Font
 italic_font       FiraCode Nerd Font
 bold_italic_font  FiraCode Nerd Font
 ```
 
-Saliendo del insert-mode con la tecla <kbd>Esc y guardando el archivo con el comando `:wq`, al cerrar y abrir kitty debería estar listo.
+Saliendo del insert-mode con la tecla <kbd>Esc</kbd> y guardando el archivo con el comando `:wq`, al cerrar y abrir kitty debería estar listo.
 
 ### 🐚 Cambiando Bash por Zsh
 
-Se puede ver qué shell está usando la terminal mediante 
+Se puede ver qué shell está usando la terminal mediante
 
-```
+```bash
 echo $SHELL
 ```
 
 El comando va a retornar la dirección en donde se encuentra Bash, como vamos a cambiar a zsh para nuestro usuario usamos el comando:
 
-```
+```bash
 chsh -s $(which zsh)
 ```
 
@@ -152,14 +156,14 @@ Si probamos denuevo `echo $SHELL` nos va a seguir saliendo Bash, pues tenemos qu
 
 Para integrar starship en la terminal debemos modificar el archivo `.zshrc` que debería estar en home (`~/`), (si no está da lo mismo, lo creamos con neovim):
 
-```
+```bash
 cd
 nvim .zshrc
 ```
 
 Para iniciar Starship agregamos al archivo anterior la linea:
 
-```
+```bash
 eval "$(starship init zsh)"
 ```
 
@@ -167,20 +171,20 @@ Si ahora reiniciamos la terminal, el formato debe haber cambiado. La configuraci
 
 Por último, falta algo muy importante, el autocompletado y el destacado de comandos y el historial de comandos, para eso en home tenemos que clonar unos repositorios:
 
-```
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 ```
 
 Despues creamos el archivo donde se guarda el historial de comandos (archivo vacío, salir con `:wq`):
 
-```
+```bash
 nvim .zsh_history
 ```
 
 Luego para activar estas características hay que agregar al archivo `.zshrc` lo siguiente:
 
-```
+```bash
 HISTSIZE=5000
 SAVEHIST=5000
 
@@ -202,7 +206,7 @@ En este mismo archivo podemos crear aliases que nos parezcan útiles con:
 ```
 alias nombre="comando"
 ```
-Los que estoy usando son: 
+Los que estoy usando son:
 | Alias     | Comando                                    | Descripción                                                   |
 |-----------|--------------------------------------------|---------------------------------------------------------------|
 | ls        | ls -lah                                    | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
