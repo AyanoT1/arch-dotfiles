@@ -169,7 +169,18 @@ eval "$(starship init zsh)"
 
 Si ahora reiniciamos la terminal, el formato debe haber cambiado. La configuración de Starship está en `~/.config` en un archivo que se llama `starship.toml`, acá pueden copiar y pegar la configuración que está en este repositorio, probar los presets de la página o hacer su propia config, el funcionamiento de cada módulo y las presents están en la página oficial de [Starship](https://starship.rs/).
 
-Por último, falta algo muy importante, el autocompletado y el destacado de comandos y el historial de comandos, para eso en home tenemos que clonar unos repositorios:
+Para copiar la configuración del repositorio:
+
+```bash
+cd
+git clone https://github.com/AyanoT1/arch-dotfiles.git
+cp ~/arch-dotfiles/dotfiles/.cofig/starship.toml ~/.config
+```
+
+
+### 🧭 Autocompletado, Destacado de Comandos e Historial
+
+Por último, el autocompletado y el destacado de comandos y el historial de comandos, para eso en home tenemos que clonar unos repositorios:
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
