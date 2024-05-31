@@ -3,6 +3,6 @@
     "modules-center": ["clock"],
 
     "clock": {
-        "format-alt": "{󰥔 %H:%M}"
+        "format": "󰥔 {:%H:%M}"
     }
 }
