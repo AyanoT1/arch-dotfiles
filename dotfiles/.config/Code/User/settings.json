@@ -11,6 +11,7 @@
 
     // Themes Settings
     "workbench.colorTheme": "Alt Catppuccin Frappé",
+    "workbench.iconTheme": "material-icon-theme",
 
     // Terminal Settings
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
@@ -25,5 +26,5 @@
     "workbench.statusBar.visible": true,
     "security.workspace.trust.untrustedFiles": "open",
     "markdown-preview-enhanced.previewTheme": "github-dark.css",
-    "git.autofetch": true,
+    "git.autofetch": true
 }
