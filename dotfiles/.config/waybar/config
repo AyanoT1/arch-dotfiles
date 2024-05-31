@@ -1,8 +1,26 @@
 {
     "layer": "top",
+    "margin-top": 5,
+    "margin-bottom": 3,
+    "margin-left": 5,
+    "margin-right": 5,
+
     "modules-center": ["clock"],
+    "modules-left": ["cpu","memory"],
 
     "clock": {
-        "format": "󰥔 {:%H:%M}"
+        "format": "󰥔 {:%H:%M}",
+        "interval": 60
+    },
+
+    "cpu": {
+        "format": " {load}%",
+        "interval": 5
+    },
+
+    "memory": {
+        "format": "  {used} GiB",
+        "format-alt": "  {percentage}%",
+        "interval": 5
     }
 }

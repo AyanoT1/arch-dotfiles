@@ -9,6 +9,8 @@ window#waybar {
 }
 
 #clock,
+#cpu,
+#memory,
 #battery,
 #temperature,
 #backlight,
@@ -18,12 +20,8 @@ window#waybar {
 #custom-media,
 #tray,
 #mode {
-    background-color: #1e1e2e; /* Change this to any gray color you want */
+    background-color: #101529; /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;
-    color: #cdd6f4;
-}
-
-#clock {
-    color: #e5c890
+    color: #CCF8FF;
 }
