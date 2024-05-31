@@ -11,10 +11,9 @@
 
     // Themes Settings
     "workbench.colorTheme": "Alt Catppuccin Frappé",
-    "workbench.iconTheme": "material-icon-theme",
 
     // Terminal Settings
-    "terminal.integrated.fontFamily": "JetBrainsMono NFM",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.shellIntegration.enabled": false,
 
