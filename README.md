@@ -1,3 +1,21 @@
+# Tabla de contenidos
+- [Tabla de contenidos](#tabla-de-contenidos)
+- [📖 Prefacio (ahrre palabra pituca)](#-prefacio-ahrre-palabra-pituca)
+- [⬇️ Descargar e Instalar Arch Linux](#️-descargar-e-instalar-arch-linux)
+  - [⚙️ Settings de archinstall](#️-settings-de-archinstall)
+- [🗺️ Y ahora qué? Empieza la cosecha de arroz 🌾](#️-y-ahora-qué-empieza-la-cosecha-de-arroz-)
+  - [🤖 Tutorial MUY MUY basico de Vim/NeoVim](#-tutorial-muy-muy-basico-de-vimneovim)
+  - [🪄 Embellecer la terminal 🧙‍♂️](#-embellecer-la-terminal-️)
+    - [🐈‍⬛ Tema de kitty](#-tema-de-kitty)
+    - [🐚 Cambiando Bash por Zsh](#-cambiando-bash-por-zsh)
+    - [🚀 Configurar Starship](#-configurar-starship)
+    - [🧭 Autocompletado, Destacado de Comandos e Historial](#-autocompletado-destacado-de-comandos-e-historial)
+    - [🖥️ Customización de KDE](#️-customización-de-kde)
+      - [⚙️ Barras de tareas](#️-barras-de-tareas)
+      - [⚙️ Configuraciones del sistema](#️-configuraciones-del-sistema)
+      - [⭐ Extras](#-extras)
+- [🔭 Y luego?](#-y-luego)
+
 # 📖 Prefacio (ahrre palabra pituca)
 
 Éste readme es más una guía de Introducción al Ricing, para explicar los conceptos más basicos de la customización de Linux, los contenidos del repositorio son mis configuraciónes actuales (mis dotfiles) que espero sirvan de ejemplo más que simplemente copiar y pegar, aunque claro, recomendaría hacer todo este proceso (al menos) una sola vez y despues sí copiar y pegar.
@@ -95,7 +113,7 @@ La dirección del archivo se refiere a la dirección relativa al directorio que 
 Los comandos de uso básico son:
 
 | Tecla(s) | Modo  | Descripción                                 |
-|----------|-------|---------------------------------------------|
+|:--------:|:-----:|:--------------------------------------------|
 | <kbd>i   | Normal| Entra en modo Insert antes del cursor       |
 | <kbd>Esc | Insert| Vuelve al modo Normal                       |
 | <kbd>x   | Normal| Borra el carácter bajo el cursor            |
@@ -218,12 +236,57 @@ En este mismo archivo podemos crear aliases que nos parezcan útiles con:
 alias nombre="comando"
 ```
 Los que estoy usando son:
-| Alias     | Comando                                    | Descripción                                                   |
-|-----------|--------------------------------------------|---------------------------------------------------------------|
-| ls        | ls -lah --color                                   | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
-| fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                |
-| vim       | nvim                                       | Sí, vim es más corto que nvim                                 |
+| Alias     | Comando                                    | Descripción                                                                |
+|-----------|--------------------------------------------|----------------------------------------------------------------------------|
+| ls        | ls -lah --color                            | Muestra en formato lista, incluyendo archivos ocultos, con tamaños leíbles |
+| fontlist  | fc-list \| cut -d'/' -f4- \| fzf           | Permite ver las fuentes instaladas y el nombre                             |
+| vim       | nvim                                       | Sí, vim es más corto que nvim                                              |
 
 Para ocupar los aliases creados hay que reinicar el terminal.
 
-# Coming Soon 🔜
+### 🖥️ Customización de KDE
+
+La customización de KDE es bastante sencilla (no como otros entornos de escritorio), casi todo tiene una interfaz grafica (aunque a veces no funciona muy bien), para editar la barra de tareas, o paneles como les dicen en KDE hay que sólo hacer click derecho en la barra que quieres editar y seleccionar "enter edit mode" con todas las opciones que hay, para lo demás esta la opción de configuraciones del sistema, por defecto está anclada a la barra de tareas, no entraré en mucho detalle en esta sección, solo voy a dejar mis configuraciones generales:
+
+#### ⚙️ Barras de tareas
+
+| Opción     | Panel inferior | Panel superior |
+|:-----------|:---------------|:---------------|
+| position   | down           | up             |
+| alignment  | center         | center         |
+| width      | fit content    | full width     |
+| visibility | always visible | always visible |
+| opacity    | translucent    | opaque         |
+| style      | floating       | floating       |
+
+La barra inferior solo contiene las aplicaciones y la superior contiene el application launcher de kde, el system tray y el reloj.
+
+####  ⚙️ Configuraciones del sistema
+
+| opcion             |            valor             |
+|--------------------|------------------------------|
+| Color theme        | Catppuccin Frappe Colors     |
+| Window decorations | Catppuccin Frappe Classic    |
+| Icons              | Papirus Dark                 |
+| Cursor             | Afterglow Cursors            |
+| Splash Screen      | Arch Simple                  |
+| SDDM               | Breeze                       |
+| General font       | Fira Code Medium             |
+
+#### ⭐ Extras
+
+Como extra, el tema de firefox que combina con esta config es Catppuccin Frappé - Flamingo y el tema de VS Code es Alt Catppuccin Frappé, sí, me encanta Catpuccin.
+
+# 🔭 Y luego?
+
+Bueno, no sé, pero una vez hechas todo lo descrito en esta guía ya está hecho el camino para hacer cosas más complejas o simlemente dejar de procastinar customizando linux y empezar a trabajar, de todas formas el comando para copiar dotfiles de manera recursiva y ahorrarse todo el trabajo descrito arriba es:
+
+```bash
+cp -rsf ~/arch-dotfiles/dotfiles/. ~
+```
+
+Las flags del comando copy significan:
+
+- -r es para copiar recursivamente la carpeta
+- -s es para hacer una copia simbólica (y poder usar github para guardar los cambios)
+- -f es para reescribir los archivos ya existentes
