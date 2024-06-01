@@ -6,7 +6,7 @@
     "margin-right": 5,
 
     "modules-center": ["clock"],
-    "modules-left": ["cpu","memory"],
+    "modules-left": ["custom/rofi","cpu","memory"],
 
     "clock": {
         "format": "󰥔 {:%H:%M}",
@@ -22,5 +22,11 @@
         "format": "  {used} GiB",
         "format-alt": "  {percentage}%",
         "interval": 5
+    },
+
+    "custom/rofi": {
+        "format": "󰀻",
+        "on-click": "rofi -show drun"
     }
+
 }

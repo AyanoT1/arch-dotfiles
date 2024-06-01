@@ -11,30 +11,30 @@ configuration {
 }
 
 * {
-    font: "JetBrains Mono Nerd Font 10";
-    border-colour:               #7AA2F7FF;
-    handle-colour:               #D9E0EEFF;
-    background-colour:           #1E1D2FFF;
-    foreground-colour:           #D9E0EEFF;
-    alternate-background:        #282839FF;
-    normal-background:           #1E1D2FFF;
-    normal-foreground:           #D9E0EEFF;
+    font: "FiraCode Nerd Font 10";
+    border-colour:               #CCF8FF;
+    handle-colour:               #CCF8FF;
+    background-colour:           #101529;
+    foreground-colour:           #CCF8FF;
+    alternate-background:        #1B2537;
     urgent-background:           #F28FADFF;
-    urgent-foreground:           #1E1D2FFF;
     active-background:           #ABE9B3FF;
-    active-foreground:           #1E1D2FFF;
-    selected-normal-background:  #7AA2F7FF;
-    selected-normal-foreground:  #1E1D2FFF;
+    normal-background:           #101529;
+    normal-foreground:           #CCF8FF;
+    urgent-foreground:           #101529;
+    active-foreground:           #101529;
+    selected-normal-background:  #CCF8FF;
+    selected-normal-foreground:  #101529;
     selected-urgent-background:  #ABE9B3FF;
-    selected-urgent-foreground:  #1E1D2FFF;
+    selected-urgent-foreground:  #101529;
     selected-active-background:  #F28FADFF;
-    selected-active-foreground:  #1E1D2FFF;
-    alternate-normal-background: #1E1D2FFF;
-    alternate-normal-foreground: #D9E0EEFF;
+    selected-active-foreground:  #101529;
+    alternate-normal-background: #101529;
+    alternate-normal-foreground: #CCF8FF;
     alternate-urgent-background: #F28FADFF;
-    alternate-urgent-foreground: #1E1D2FFF;
+    alternate-urgent-foreground: #101529;
     alternate-active-background: #ABE9B3FF;
-    alternate-active-foreground: #1E1D2FFF;
+    alternate-active-foreground: #101529;
 }
 
 /*****----- Main Window -----*****/
