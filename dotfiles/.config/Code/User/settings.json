@@ -10,7 +10,7 @@
     "editor.minimap.enabled": false,
 
     // Themes Settings
-    "workbench.colorTheme": "Alt Catppuccin Frappé",
+    "workbench.colorTheme": "Alt Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
 
     // Terminal Settings
