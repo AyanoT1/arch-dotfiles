@@ -13,7 +13,9 @@
         "custom/separator",
         "battery",
         "custom/separator",
-        "clock"],
+        "clock",
+        "custom/separator",
+        "custom/power"],
 
     "modules-left": [
         "custom/rofi",
@@ -90,6 +92,11 @@
         "scroll-step": 1,
         "on-click": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "custom/power": {
+        "format": "<span font_desc='JetBrainsMono Nerd Font Propo'>⏻</span>",
+        "on-click": "wlogout"
     }
 
 }
