@@ -5,7 +5,8 @@
     "margin-left": 5,
     "margin-right": 5,
 
-    "modules-center": ["clock"],
+    "modules-center": ["hyprland/window"] ,
+    "modules-right": ["clock"],
     "modules-left": ["custom/rofi","custom/separator","hyprland/workspaces", "custom/separator","cpu","custom/separator", "memory"],
 
     "clock": {
@@ -31,6 +32,11 @@
 
     "custom/separator": {
         "format": "|"
+    },
+
+    "hyprland/window": {
+        "format": "{class}",
+        "icon": true
     }
 
 }

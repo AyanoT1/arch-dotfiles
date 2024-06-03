@@ -11,6 +11,7 @@ window#waybar {
 #clock,
 #cpu,
 #memory,
+#window,
 #custom-rofi {
     background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
