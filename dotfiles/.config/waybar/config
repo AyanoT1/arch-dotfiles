@@ -1,12 +1,12 @@
 {
     "layer": "top",
     "margin-top": 5,
-    "margin-bottom": 3,
+    "margin-bottom": 0,
     "margin-left": 5,
     "margin-right": 5,
 
     "modules-center": ["clock"],
-    "modules-left": ["custom/rofi","cpu","memory"],
+    "modules-left": ["custom/rofi", "custom/separator","cpu","custom/separator", "memory"],
 
     "clock": {
         "format": "󰥔 {:%H:%M}",
@@ -14,7 +14,7 @@
     },
 
     "cpu": {
-        "format": " {load}%",
+        "format": " {usage}%",
         "interval": 5
     },
 
@@ -27,6 +27,10 @@
     "custom/rofi": {
         "format": "󰀻",
         "on-click": "rofi -show drun"
+    },
+
+    "custom/separator": {
+        "format": "|"
     }
 
 }

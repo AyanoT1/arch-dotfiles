@@ -21,8 +21,12 @@ window#waybar {
 #custom-media,
 #tray,
 #mode {
-    background-color: #101529; /* Change this to any gray color you want */
+    background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;
-    color: #CCF8FF;
+    color: #342358;
+}
+
+#custom-separator {
+    color: rgba(245, 200, 240, 1);
 }
