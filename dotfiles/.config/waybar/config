@@ -6,7 +6,7 @@
     "margin-right": 5,
 
     "modules-center": ["clock"],
-    "modules-left": ["custom/rofi", "custom/separator","cpu","custom/separator", "memory"],
+    "modules-left": ["custom/rofi","custom/separator","hyprland/workspaces", "custom/separator","cpu","custom/separator", "memory"],
 
     "clock": {
         "format": "󰥔 {:%H:%M}",

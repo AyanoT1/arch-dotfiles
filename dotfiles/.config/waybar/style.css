@@ -11,22 +11,28 @@ window#waybar {
 #clock,
 #cpu,
 #memory,
-#custom-rofi,
-#battery,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode {
+#custom-rofi {
     background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;
     color: #342358;
 }
 
+#workspaces button {
+    padding: 0 0.5em;
+    color: #f5c8f0;
+    border-style: solid;
+    border-color: #f5c8f0;
+    border-width: 1px;
+    border-radius: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#workspaces button.active {
+    border-width: 2px;
+}
+
 #custom-separator {
-    color: rgba(245, 200, 240, 1);
+    color: #f5c8f0;
 }
