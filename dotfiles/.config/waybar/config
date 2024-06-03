@@ -7,7 +7,11 @@
 
     "modules-center": ["hyprland/window"] ,
     "modules-right": [
+        "pulseaudio",
+        "custom/separator",
         "network",
+        "custom/separator",
+        "battery",
         "custom/separator",
         "clock"],
 
@@ -54,6 +58,38 @@
         "format-wifi": "  {signalStrength}%",
         "format-ethernet": "<span font_desc='Font Awesome Free'></span>",
         "format-disconnected": "<span font_desc='JetBrainsMono Nerd Font Propo'>󰪎</span>"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{icon} 󱐋 {capacity}%",
+        "format-plugged": "{icon} 󱐋 {capacity}%",
+        "format-alt": "{time} remaining",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 10
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
     }
 
 }

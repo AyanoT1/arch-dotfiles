@@ -13,7 +13,9 @@ window#waybar {
 #memory,
 #window,
 #custom-rofi,
-#network {
+#network,
+#battery,
+#pulseaudio {
     background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;
