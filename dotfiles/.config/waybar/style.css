@@ -1,5 +1,5 @@
 * {
-    font-family: 'FiraCode Nerd Font', monospace;
+    font-family: 'FiraCode Nerd Font', 'Font Awesome Free','JetBrainsMono Nerd Font', monospace;
     font-size: 16px;
 }
 
@@ -12,7 +12,8 @@ window#waybar {
 #cpu,
 #memory,
 #window,
-#custom-rofi {
+#custom-rofi,
+#network {
     background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;

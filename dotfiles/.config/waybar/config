@@ -6,8 +6,19 @@
     "margin-right": 5,
 
     "modules-center": ["hyprland/window"] ,
-    "modules-right": ["clock"],
-    "modules-left": ["custom/rofi","custom/separator","hyprland/workspaces", "custom/separator","cpu","custom/separator", "memory"],
+    "modules-right": [
+        "network",
+        "custom/separator",
+        "clock"],
+
+    "modules-left": [
+        "custom/rofi",
+        "custom/separator",
+        "hyprland/workspaces",
+        "custom/separator",
+        "cpu",
+        "custom/separator",
+        "memory"],
 
     "clock": {
         "format": "󰥔 {:%H:%M}",
@@ -37,6 +48,12 @@
     "hyprland/window": {
         "format": "{class}",
         "icon": true
+    },
+
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "<span font_desc='Font Awesome Free'></span>",
+        "format-disconnected": "<span font_desc='JetBrainsMono Nerd Font Propo'>󰪎</span>"
     }
 
 }
