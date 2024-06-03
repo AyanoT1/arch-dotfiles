@@ -1,0 +1,26 @@
+* {
+    font: "FiraCode Nerd Font 10";
+    border-colour:               #f5c8f0;
+    handle-colour:               #f5c8f0;
+    background-colour:           #1e1e2e;
+    foreground-colour:           #f5c8f0;
+    alternate-background:        #1B2537;
+    urgent-background:           #F28FADFF;
+    active-background:           #ABE9B3FF;
+    normal-background:           #1e1e2e;
+    normal-foreground:           #f5c8f0;
+    urgent-foreground:           #1e1e2e;
+    active-foreground:           #1e1e2e;
+    selected-normal-background:  #f5c8f0;
+    selected-normal-foreground:  #1e1e2e;
+    selected-urgent-background:  #ABE9B3FF;
+    selected-urgent-foreground:  #1e1e2e;
+    selected-active-background:  #F28FADFF;
+    selected-active-foreground:  #1e1e2e;
+    alternate-normal-background: #1e1e2e;
+    alternate-normal-foreground: #f5c8f0;
+    alternate-urgent-background: #F28FADFF;
+    alternate-urgent-foreground: #1e1e2e;
+    alternate-active-background: #ABE9B3FF;
+    alternate-active-foreground: #1e1e2e;
+}
