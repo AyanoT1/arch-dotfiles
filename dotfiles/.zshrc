@@ -3,6 +3,7 @@ eval "$(starship init zsh)"
 alias ls="ls -lah --color"
 alias fontlist="fc-list | cut -d'/' -f5- | fzf"
 alias vim="nvim"
+alias gitlog="git log --oneline --graph --decorate"
 
 HISTFILE=~/.zsh_history
 
