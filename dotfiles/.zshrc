@@ -1,5 +1,6 @@
 eval "$(starship init zsh)"
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" >/dev/null
+
 
 alias ls="ls -lah --color"
 alias fontlist="fc-list | cut -d'/' -f5- | fzf"
