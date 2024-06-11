@@ -79,7 +79,7 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% <span font_desc='JetBrainsMono Nerd Font Propo'>{icon}</span>",
         "format-bluetooth": "{volume}% {icon}",
         "format-muted": "",
         "format-icons": {
