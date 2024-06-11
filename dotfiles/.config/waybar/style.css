@@ -21,19 +21,23 @@ window#waybar {
     background-color: #1e1e2e;
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;
-    color: #cdd6f4;
+    color: #f5c2e7;
+    border-style: solid;
+    border-color: #f5c2e7;
+    border-width: 1px;
+    border-radius: 7px;
 }
 
 #workspaces button {
     padding: 0 0.5em;
     background-color: #1e1e2e;
-    color: #cdd6f4;
-    border-style: solid;
-    border-color: #cdd6f4;
-    border-width: 1px;
-    border-radius: 7px;
+    color: #f5c2e7;
     margin-left: 2px;
     margin-right: 2px;
+    border-style: solid;
+    border-color: #f5c2e7;
+    border-width: 1px;
+    border-radius: 7px;
 }
 
 #workspaces button.active {
