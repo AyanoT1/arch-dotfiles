@@ -16,6 +16,7 @@ window#waybar {
 #network,
 #battery,
 #pulseaudio,
+#disk,
 #custom-power {
     background-color: rgba(245, 200, 240, 0.85); /* Change this to any gray color you want */
     border-radius: 10px; /* Adjust as needed */

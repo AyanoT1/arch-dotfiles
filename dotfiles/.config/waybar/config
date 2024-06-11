@@ -24,7 +24,9 @@
         "custom/separator",
         "cpu",
         "custom/separator",
-        "memory"],
+        "memory",
+        "custom/separator",
+        "disk"],
 
     "clock": {
         "format": "󰥔 {:%H:%M}",
@@ -97,6 +99,11 @@
     "custom/power": {
         "format": "<span font_desc='JetBrainsMono Nerd Font Propo'>⏻</span>",
         "on-click": "wlogout"
-    }
+    },
 
+    "disk": {
+        "interval": 120,
+        "unit": "GB",
+        "format": "<span font_desc='JetBrainsMono Nerd Font Propo'></span>"
+    }
 }
