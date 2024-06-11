@@ -1,0 +1,109 @@
+{
+    "layer": "top",
+    "margin-top": 5,
+    "margin-bottom": 0,
+    "margin-left": 5,
+    "margin-right": 5,
+
+    "modules-center": ["hyprland/window"] ,
+    "modules-right": [
+        "pulseaudio",
+        "custom/separator",
+        "network",
+        "custom/separator",
+        "battery",
+        "custom/separator",
+        "clock",
+        "custom/separator",
+        "custom/power"],
+
+    "modules-left": [
+        "custom/rofi",
+        "custom/separator",
+        "hyprland/workspaces",
+        "custom/separator",
+        "cpu",
+        "custom/separator",
+        "memory",
+        "custom/separator",
+        "disk"],
+
+    "clock": {
+        "format": "󰥔 {:%H:%M}",
+        "interval": 60
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 5
+    },
+
+    "memory": {
+        "format": "  {used} GiB",
+        "format-alt": "  {percentage}%",
+        "interval": 5
+    },
+
+    "custom/rofi": {
+        "format": "󰀻",
+        "on-click": "rofi -show drun"
+    },
+
+    "custom/separator": {
+        "format": "|"
+    },
+
+    "hyprland/window": {
+        "format": "{class}",
+        "icon": true
+    },
+
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "<span font_desc='Font Awesome Free'></span>",
+        "format-disconnected": "<span font_desc='JetBrainsMono Nerd Font Propo'>󰪎</span>"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{icon} 󱐋 {capacity}%",
+        "format-plugged": "{icon} 󱐋 {capacity}%",
+        "format-alt": "{time} remaining",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 10
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% <span font_desc='JetBrainsMono Nerd Font Propo'>{icon}</span>",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
+
+    "custom/power": {
+        "format": "<span font_desc='JetBrainsMono Nerd Font Propo'>⏻</span>",
+        "on-click": "wlogout"
+    },
+
+    "disk": {
+        "interval": 120,
+        "unit": "GB",
+        "format": "<span font_desc='JetBrainsMono Nerd Font Propo'></span>"
+    }
+}
