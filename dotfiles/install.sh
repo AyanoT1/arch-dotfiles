@@ -1,5 +1,3 @@
-#!bash
-
 echo "TEST 3"
 
 echo -e "\n Updating system \n"
@@ -12,7 +10,7 @@ sleep 3
 
 echo -e "\n Installing pacman packages \n"
 
-sudo pacman -S git firefox neovim zsh starship rofi-wayland waybar pamixer pavucontrol brightnessctl hyprpaper fzf unzip arc-dark ntfs-3g gparted less man tldr neofetch
+sudo pacman -S git firefox neovim zsh starship rofi-wayland waybar pamixer pavucontrol brightnessctl hyprpaper fzf unzip ntfs-3g gparted man tldr neofetch
 
 sleep 3
 
@@ -37,7 +35,13 @@ yay wlogout
 
 clear
 
-sleep 3
+sleep 1
+
+echo -e "Installing GTK Theme"
+
+yay arc-dark
+
+sleep 1
 
 echo -e "\n Installing Fonts \n"
 yay firacode nerd
