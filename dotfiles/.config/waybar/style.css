@@ -17,7 +17,8 @@ window#waybar {
 #battery,
 #pulseaudio,
 #disk,
-#custom-power {
+#custom-power,
+#backlight {
     background-color: #1e1e2e;
     border-radius: 10px; /* Adjust as needed */
     padding: 5px 10px;

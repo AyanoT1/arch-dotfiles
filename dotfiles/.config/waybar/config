@@ -7,6 +7,8 @@
 
     "modules-center": ["hyprland/window"] ,
     "modules-right": [
+        "backlight",
+        "custom/separator",
         "pulseaudio",
         "custom/separator",
         "network",
@@ -105,5 +107,10 @@
         "interval": 120,
         "unit": "GB",
         "format": "<span font_desc='JetBrainsMono Nerd Font Propo'></span>"
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
     }
 }
