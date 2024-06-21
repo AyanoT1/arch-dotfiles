@@ -9,10 +9,6 @@
     "editor.tabCompletion": "on",
     "editor.minimap.enabled": false,
 
-    // Themes Settings
-    "workbench.colorTheme": "Alt Catppuccin Frappé",
-    "workbench.iconTheme": "material-icon-theme",
-
     // Terminal Settings
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.fontSize": 16,
@@ -26,5 +22,7 @@
     "workbench.statusBar.visible": true,
     "security.workspace.trust.untrustedFiles": "open",
     "markdown-preview-enhanced.previewTheme": "github-dark.css",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.colorTheme": "Alt Catppuccin Frappé",
+    "workbench.iconTheme": "material-icon-theme"
 }
